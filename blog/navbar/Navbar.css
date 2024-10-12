@@ -1,0 +1,156 @@
+/* Navbar Container */
+
+.navbar {
+    background-color: #2c3e50;
+    /* Dark background color */
+    padding: 1rem;
+    /* Padding around the navbar */
+    position: relative;
+    /* For absolute positioning of dropdown */
+}
+
+
+/* Hamburger Button Styles */
+
+.hamburger {
+    display: none;
+    /* Hidden by default */
+    flex-direction: column;
+    /* Stack bars vertically */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+
+/* Hamburger Bars */
+
+.bar {
+    width: 30px;
+    /* Width of the bars */
+    height: 3px;
+    /* Height of the bars */
+    background-color: white;
+    /* Color of the bars */
+    margin: 4px;
+    /* Margin between bars */
+    transition: all 0.3s ease;
+    /* Smooth transition for transform */
+}
+
+
+/* Open Class for Hamburger Animation */
+
+.bar.open:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+    /* Rotate top bar */
+}
+
+.bar.open:nth-child(2) {
+    opacity: 0;
+    /* Hide middle bar */
+}
+
+.bar.open:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+    /* Rotate bottom bar */
+}
+
+
+/* Navbar List Styles */
+
+.nav-links {
+    list-style-type: none;
+    /* Remove bullets */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+    display: flex;
+    /* Default flexbox for larger screens */
+    justify-content: space-around;
+    /* Space items evenly */
+    align-items: center;
+    /* Center align items vertically */
+}
+
+
+/* Navbar Links */
+
+.nav-links li {
+    margin: 0;
+    /* Remove margin from list items */
+}
+
+
+/* Navbar Link Styles */
+
+.nav-links a {
+    color: white;
+    /* White text color */
+    text-decoration: none;
+    /* Remove underline from links */
+    padding: 0.5rem 1rem;
+    /* Padding around links */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transition effects for hover */
+}
+
+
+/* Navbar Link Hover Effect */
+
+.nav-links a:hover {
+    background-color: #34495e;
+    /* Darker background on hover */
+    color: #ecf0f1;
+    /* Slightly lighter text color on hover */
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        /* Show hamburger button on mobile */
+        justify-content: space-around;
+        /* Space bars evenly */
+    }
+    .nav-links {
+        display: none;
+        /* Hide nav links by default */
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: stretch;
+        /* Stretch items to full width */
+        position: absolute;
+        /* Positioning for dropdown */
+        top: 60px;
+        /* Position below the navbar */
+        left: 0;
+        /* Align left */
+        right: 0;
+        /* Align right */
+        background-color: #2c3e50;
+        /* Background color */
+    }
+    .nav-links.open {
+        display: flex;
+        /* Show links when open */
+    }
+    .nav-links li {
+        width: 100%;
+        /* Full width for list items */
+        text-align: center;
+        /* Center align text */
+        margin: 0.5rem 0;
+        /* Margin between items */
+    }
+    .nav-links a {
+        display: block;
+        /* Make links block-level elements */
+        padding: 1rem;
+        /* More padding for touch targets */
+    }
+}

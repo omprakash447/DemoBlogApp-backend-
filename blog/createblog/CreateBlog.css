@@ -1,0 +1,100 @@
+/* BlogPage.css */
+
+.blog-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.blog-input,
+.blog-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.blog-textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+.blog-image-input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #555;
+}
+
+.blogs-container {
+    margin-top: 30px;
+}
+
+.blog-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.blog-item h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.blog-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.blog-image {
+    margin-top: 15px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .blog-page {
+        padding: 15px;
+    }
+    .blog-item h3 {
+        font-size: 1.3rem;
+    }
+    .blog-item p {
+        font-size: 0.95rem;
+    }
+}

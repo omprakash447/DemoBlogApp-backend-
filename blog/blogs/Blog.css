@@ -1,0 +1,108 @@
+/* Blog.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* Use a clean font for the body */
+    background-color: #f9f9f9;
+    /* Light gray background for the body */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Main container for the blog posts */
+
+.container {
+    max-width: 800px;
+    /* Maximum width for the blog container */
+    margin: 40px auto;
+    /* Center the container with top/bottom margin */
+    padding: 20px;
+    /* Padding around the container */
+    background-color: #222;
+    /* White background for the container */
+    border-radius: 10px;
+    /* Rounded corners for the container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+
+/* Individual blog styling */
+
+.blog {
+    background-color: #fff;
+    /* White background for each blog */
+    margin-bottom: 20px;
+    /* Space between blog posts */
+    padding: 20px;
+    /* Padding inside each blog */
+    border-radius: 10px;
+    /* Rounded corners for each blog */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for each blog */
+    transition: transform 0.2s ease;
+    /* Smooth transition for hover effect */
+}
+
+
+/* Blog hover effect */
+
+.blog:hover {
+    transform: translateY(-3px);
+    /* Lift effect on hover */
+}
+
+
+/* Blog title styling */
+
+.blog h1 {
+    font-size: 24px;
+    /* Font size for the title */
+    color: #333;
+    /* Dark gray color for the title */
+    margin: 0 0 10px;
+    /* Remove top margin and add space below */
+}
+
+
+/* Blog content styling */
+
+.blog p {
+    font-size: 16px;
+    /* Font size for the content */
+    line-height: 1.5;
+    /* Line height for better readability */
+    color: #555;
+    /* Medium gray color for the content */
+}
+
+
+/* Optional: Styling for when there are no blogs */
+
+.no-blogs {
+    text-align: center;
+    /* Center the text */
+    font-size: 18px;
+    /* Font size for the message */
+    color: #888;
+    /* Light gray color */
+}
+
+
+/* Responsive design for smaller screens */
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 15px;
+        /* Reduce padding for smaller screens */
+    }
+    .blog h1 {
+        font-size: 20px;
+        /* Smaller font size for the title */
+    }
+    .blog p {
+        font-size: 14px;
+        /* Smaller font size for the content */
+    }
+}
